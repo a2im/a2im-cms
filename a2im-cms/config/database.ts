@@ -7,7 +7,7 @@ export default ({ env }) => ({
       database: env('DATABASE_NAME', 'strapi'),
       user: env('DATABASE_USERNAME', 'postgres'),
       password: env('DATABASE_PASSWORD', 'a2imdbpw'),
-      ssl: env.bool('DATABASE_SSL', true),
+      ssl: { rejectUnauthorized: env.bool('DATABASE_SSL_SELF', false),},
     },
   },
 });
