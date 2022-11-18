@@ -4,9 +4,20 @@ export default ({ env }) => [
     name: 'strapi::security',
     config: {
       contentSecurityPolicy: {
+        useDefaults: true,
         directives: {
+          'connect-src': ["'self'", 'https:'],
           'script-src': ["'self'", "'unsafe-inline'", 'cdn.jsdelivr.net'],
-          'img-src': ["'self'", 'data:', 'cms.a2im.org', 'cdn.jsdelivr.net', 'strapi.io', `${env('AWS_BUCKET_NAME')}.s3.amazonaws.com`],
+          'img-src': [
+            "'self'",
+            'data:',
+            'blob:',
+            'cms.a2im.org',
+            'dl.airtable.com',
+            'strapi.io',
+            `${env('AWS_BUCKET_NAME')}.s3.amazonaws.com`
+          ],
+          upgradeInsecureRequests: null,
         },
       },
     },
