@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sponsors",
+  "info": {
+    "singularName": "sponsor",
+    "pluralName": "sponsors",
+    "displayName": "Sponsor",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Bio": {
+      "type": "richtext"
+    },
+    "Logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "URL": {
+      "type": "string"
+    },
+    "sponsor_packages": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::sponsor-package.sponsor-package"
+    }
+  }
+}

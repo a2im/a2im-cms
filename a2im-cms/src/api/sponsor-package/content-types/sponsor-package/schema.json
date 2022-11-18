@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sponsor_packages",
+  "info": {
+    "singularName": "sponsor-package",
+    "pluralName": "sponsor-packages",
+    "displayName": "Sponsor Package",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "event": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::event.event",
+      "inversedBy": "sponsor_packages"
+    },
+    "Level": {
+      "type": "enumeration",
+      "enum": [
+        "Tier 1",
+        "Tier 2",
+        "Tier 3"
+      ]
+    }
+  }
+}
