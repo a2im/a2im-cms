@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "libera_categories",
+  "info": {
+    "singularName": "libera-category",
+    "pluralName": "libera-categories",
+    "displayName": "Libera Category",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Rules": {
+      "type": "richtext"
+    },
+    "nominations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::nomination.nomination"
+    },
+    "events": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::event.event",
+      "mappedBy": "libera_category"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "nominations",
+  "info": {
+    "singularName": "nomination",
+    "pluralName": "nominations",
+    "displayName": "Nomination"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "isWinner": {
+      "type": "boolean"
+    },
+    "Artwork": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "event": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::event.event",
+      "inversedBy": "nominations"
+    }
+  }
+}

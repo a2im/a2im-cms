@@ -41,6 +41,18 @@
       "relation": "oneToMany",
       "target": "api::sponsor-package.sponsor-package",
       "mappedBy": "event"
+    },
+    "nominations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::nomination.nomination",
+      "mappedBy": "event"
+    },
+    "libera_category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::libera-category.libera-category",
+      "inversedBy": "events"
     }
   }
 }

@@ -1,11 +1,10 @@
 {
   "kind": "singleType",
-  "collectionName": "libera_sponsor_footers",
+  "collectionName": "indie_week_sponsor_footers",
   "info": {
-    "singularName": "libera-sponsor-footer",
-    "pluralName": "libera-sponsor-footers",
-    "displayName": "Libera Sponsor Footer",
-    "description": ""
+    "singularName": "indie-week-sponsor-footer",
+    "pluralName": "indie-week-sponsor-footers",
+    "displayName": "Indie Week Sponsor Footer"
   },
   "options": {
     "draftAndPublish": true
