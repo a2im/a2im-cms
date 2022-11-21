@@ -30,11 +30,11 @@ export default ({ env }) => ({
         enabled: true,
         shadowCRUD: true,
         config: {
-          playgroundAlways: false,
+          playgroundAlways: true,
           defaultLimit: 10,
           maxLimit: 20,
           apolloServer: {
-            tracing: false,
+            tracing: true,
           },
         }
       }
