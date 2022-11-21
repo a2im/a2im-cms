@@ -25,4 +25,17 @@ export default ({ env }) => ({
           },
         },
       },
+      graphql: {
+        endpoint: '/graphql',
+        enabled: true,
+        shadowCRUD: true,
+        config: {
+          playgroundAlways: false,
+          defaultLimit: 10,
+          maxLimit: 20,
+          apolloServer: {
+            tracing: false,
+          },
+        }
+      }
   });
