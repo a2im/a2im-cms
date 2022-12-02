@@ -36,6 +36,12 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::sponsor-package.sponsor-package"
+    },
+    "ads": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::ad.ad",
+      "mappedBy": "sponsor"
     }
   }
 }

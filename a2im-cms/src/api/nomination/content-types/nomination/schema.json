@@ -4,7 +4,8 @@
   "info": {
     "singularName": "nomination",
     "pluralName": "nominations",
-    "displayName": "Nomination"
+    "displayName": "Nomination",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -21,20 +22,32 @@
       "type": "boolean"
     },
     "Artwork": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "event": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::event.event",
       "inversedBy": "nominations"
+    },
+    "record_labels": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::record-label.record-label"
+    },
+    "libera_categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::libera-category.libera-category",
+      "mappedBy": "nomination"
     }
   }
 }

@@ -53,6 +53,12 @@
       "relation": "manyToOne",
       "target": "api::libera-category.libera-category",
       "inversedBy": "events"
+    },
+    "apps": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::app.app",
+      "mappedBy": "events"
     }
   }
 }

@@ -31,6 +31,12 @@
       "relation": "oneToMany",
       "target": "api::event.event",
       "mappedBy": "libera_category"
+    },
+    "nomination": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::nomination.nomination",
+      "inversedBy": "libera_categories"
     }
   }
 }

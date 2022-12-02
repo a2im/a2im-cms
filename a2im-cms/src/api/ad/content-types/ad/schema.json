@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ads",
+  "info": {
+    "singularName": "ad",
+    "pluralName": "ads",
+    "displayName": "Ad",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "URL": {
+      "type": "string"
+    },
+    "Asset": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "sponsor": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::sponsor.sponsor",
+      "inversedBy": "ads"
+    },
+    "Expiry": {
+      "type": "datetime"
+    },
+    "apps": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::app.app",
+      "inversedBy": "ads"
+    },
+    "Type": {
+      "type": "enumeration",
+      "enum": [
+        "Horizontal Banner",
+        "Skyscraper"
+      ]
+    }
+  }
+}
