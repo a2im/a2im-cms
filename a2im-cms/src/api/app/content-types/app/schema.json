@@ -41,11 +41,6 @@
       "target": "api::event.event",
       "inversedBy": "apps"
     },
-    "news_posts": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::post.post"
-    },
     "sponsors": {
       "type": "relation",
       "relation": "oneToMany",
@@ -62,6 +57,18 @@
       "relation": "manyToMany",
       "target": "api::ad.ad",
       "mappedBy": "apps"
+    },
+    "news_posts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::post.post",
+      "mappedBy": "app"
+    },
+    "news_categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::news-category.news-category",
+      "inversedBy": "apps"
     }
   }
 }

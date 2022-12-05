@@ -22,21 +22,24 @@ export default ({ env }) => ({
             defaultFrom: 'support@a2im.org',
             defaultReplyTo: 'support@a2im.org',
             testAddress: 'support@a2im.org',
-          },
         },
       },
-      graphql: {
-        endpoint: '/graphql',
-        enabled: true,
-        shadowCRUD: true,
-        config: {
-          playgroundAlways: true,
-          defaultLimit: 10,
-          maxLimit: 20,
-          apolloServer: {
-            tracing: true,
-            introspection: false,
-          },
-        }
+    },
+    graphql: {
+      endpoint: '/graphql',
+      enabled: true,
+      shadowCRUD: true,
+      config: {
+        playgroundAlways: true,
+        defaultLimit: 10,
+        maxLimit: 20,
+        apolloServer: {
+          tracing: true,
+          introspection: false,
+        },
       }
+    },
+    'import-export-entries': {
+      enabled: true,
+    },
   });

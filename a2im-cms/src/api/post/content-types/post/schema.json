@@ -32,11 +32,27 @@
     "Excerpt": {
       "type": "text"
     },
-    "slug": {
+    "Slug": {
       "type": "string"
     },
     "Body": {
       "type": "richtext"
+    },
+    "app": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::app.app",
+      "inversedBy": "news_posts"
+    },
+    "news_categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::news-category.news-category"
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag.tag"
     }
   }
 }
