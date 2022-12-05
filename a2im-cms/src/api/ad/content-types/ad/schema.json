@@ -50,6 +50,9 @@
         "Horizontal Banner",
         "Skyscraper"
       ]
+    },
+    "isActive": {
+      "type": "boolean"
     }
   }
 }
