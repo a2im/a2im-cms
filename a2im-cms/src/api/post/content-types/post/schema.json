@@ -30,10 +30,8 @@
       "type": "datetime"
     },
     "Excerpt": {
-      "type": "text"
-    },
-    "Slug": {
-      "type": "string"
+      "type": "text",
+      "maxLength": 160
     },
     "Body": {
       "type": "richtext"
@@ -53,6 +51,10 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::tag.tag"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Title"
     }
   }
 }
