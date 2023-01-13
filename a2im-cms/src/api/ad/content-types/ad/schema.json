@@ -21,7 +21,7 @@
     "Asset": {
       "type": "media",
       "multiple": false,
-      "required": false,
+      "required": true,
       "allowedTypes": [
         "images",
         "files",
@@ -36,7 +36,8 @@
       "inversedBy": "ads"
     },
     "Expiry": {
-      "type": "datetime"
+      "type": "datetime",
+      "required": true
     },
     "apps": {
       "type": "relation",
@@ -48,11 +49,15 @@
       "type": "enumeration",
       "enum": [
         "Horizontal Banner",
-        "Skyscraper"
+        "Fat Skyscraper",
+        "Square",
+        "Half-banner",
+        "Leaderboard"
       ]
     },
     "isActive": {
-      "type": "boolean"
+      "type": "boolean",
+      "required": true
     }
   }
 }

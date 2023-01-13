@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "staffs",
+  "info": {
+    "singularName": "staff",
+    "pluralName": "staffs",
+    "displayName": "Staff",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Business": {
+      "type": "string"
+    },
+    "Headshot": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Bio": {
+      "type": "richtext"
+    },
+    "Relation": {
+      "type": "enumeration",
+      "enum": [
+        "Team Staff",
+        "Board of Directors",
+        "Advisory Board",
+        "Contractor"
+      ],
+      "required": true
+    }
+  }
+}

@@ -32,10 +32,10 @@ export default ({ env }) => ({
       config: {
         playgroundAlways: true,
         defaultLimit: 10,
-        maxLimit: 20,
+        maxLimit: 100,
         apolloServer: {
           tracing: true,
-          introspection: true,
+          introspection: false,
         },
       }
     },

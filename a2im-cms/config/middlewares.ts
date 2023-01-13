@@ -13,7 +13,6 @@ export default ({ env }) => [
             'data:',
             'blob:',
             'cms.a2im.org',
-            'dl.airtable.com',
             'strapi.io',
             `${env('AWS_BUCKET_NAME')}.s3.amazonaws.com`
           ],
