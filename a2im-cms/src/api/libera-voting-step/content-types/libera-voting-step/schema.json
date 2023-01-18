@@ -4,7 +4,8 @@
   "info": {
     "singularName": "libera-voting-step",
     "pluralName": "libera-voting-steps",
-    "displayName": "Libera Voting Step"
+    "displayName": "Libera Voting Step",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -17,18 +18,19 @@
     "Title": {
       "type": "string"
     },
-    "Description": {
-      "type": "text"
-    },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "Description": {
+      "type": "richtext"
     }
   }
 }
