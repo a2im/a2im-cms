@@ -69,6 +69,12 @@
       "relation": "manyToMany",
       "target": "api::news-category.news-category",
       "inversedBy": "apps"
+    },
+    "info_buttons": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::info-button.info-button",
+      "mappedBy": "apps"
     }
   }
 }
