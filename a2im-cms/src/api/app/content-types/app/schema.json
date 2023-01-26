@@ -75,6 +75,12 @@
       "relation": "manyToMany",
       "target": "api::info-button.info-button",
       "mappedBy": "apps"
+    },
+    "faq_items": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::faq-item.faq-item",
+      "mappedBy": "apps"
     }
   }
 }
