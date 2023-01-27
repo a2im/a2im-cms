@@ -4,7 +4,8 @@
   "info": {
     "singularName": "faq-item",
     "pluralName": "faq-items",
-    "displayName": "FAQ item"
+    "displayName": "FAQ item",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -20,12 +21,12 @@
     "Category": {
       "type": "enumeration",
       "enum": [
-        "Award Categories & Descriptions",
-        "General Award Eligibility Rules",
-        "Award Attachments Criteria",
-        "Tickets",
-        "Venue",
-        "Voting"
+        "GENERAL",
+        "TICKETING",
+        "ACCESSIBILITY",
+        "ACCOMMODATIONS",
+        "PRESS",
+        "AWARDS & CATEGORIES"
       ],
       "required": true
     },
