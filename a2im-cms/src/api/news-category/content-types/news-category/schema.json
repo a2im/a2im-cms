@@ -21,7 +21,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::app.app",
-      "inversedBy": "news_categories"
+      "mappedBy": "news_categories"
     }
   }
 }

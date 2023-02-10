@@ -81,6 +81,12 @@
       "relation": "manyToMany",
       "target": "api::faq-item.faq-item",
       "mappedBy": "apps"
+    },
+    "announcements": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::announcement.announcement",
+      "mappedBy": "apps"
     }
   }
 }
