@@ -10,14 +10,14 @@
     "strapi": "strapi"
   },
   "dependencies": {
-    "@strapi/plugin-graphql": "^4.6.1",
-    "@strapi/plugin-i18n": "^4.6.1",
-    "@strapi/plugin-users-permissions": "^4.6.1",
-    "@strapi/provider-email-sendgrid": "^4.6.1",
-    "@strapi/provider-upload-aws-s3": "^4.6.1",
-    "@strapi/strapi": "^4.6.1",
-    "pg": "^8.6.0",
-    "strapi-plugin-import-export-entries": "^1.18.0"
+    "@strapi/plugin-graphql": "^4.10.0",
+    "@strapi/plugin-i18n": "^4.10.0",
+    "@strapi/plugin-users-permissions": "^4.10.0",
+    "@strapi/provider-email-sendgrid": "^4.10.0",
+    "@strapi/provider-upload-aws-s3": "^4.10.0",
+    "@strapi/strapi": "^4.10.0",
+    "pg": "^8.10.0",
+    "strapi-plugin-import-export-entries": "^1.19.1"
   },
   "author": {
     "name": "Ross Ford"
@@ -26,7 +26,7 @@
     "uuid": "0f90c920-a130-4ce8-921e-08ce1bab0084"
   },
   "engines": {
-    "node": ">=14.19.1 <=18.x.x",
+    "node": ">=16 <=18.x.x",
     "npm": ">=6.0.0"
   },
   "license": "MIT"
