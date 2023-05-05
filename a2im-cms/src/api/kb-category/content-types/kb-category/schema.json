@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kb_categories",
+  "info": {
+    "singularName": "kb-category",
+    "pluralName": "kb-categories",
+    "displayName": "Kb-category",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "string"
+    },
+    "kb_articles": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::kb-article.kb-article",
+      "mappedBy": "kb_categories"
+    },
+    "MainCategory": {
+      "type": "enumeration",
+      "enum": [
+        "Operations",
+        "Events",
+        "Sales",
+        "Marketing",
+        "Human Resources"
+      ]
+    }
+  }
+}

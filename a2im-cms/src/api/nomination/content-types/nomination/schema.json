@@ -45,9 +45,9 @@
     },
     "libera_categories": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToMany",
       "target": "api::libera-category.libera-category",
-      "mappedBy": "nomination"
+      "inversedBy": "nominations"
     }
   }
 }

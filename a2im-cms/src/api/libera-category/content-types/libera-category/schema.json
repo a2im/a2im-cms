@@ -21,22 +21,17 @@
     "Rules": {
       "type": "richtext"
     },
-    "nominations": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::nomination.nomination"
-    },
     "events": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::event.event",
       "mappedBy": "libera_categories"
     },
-    "nomination": {
+    "nominations": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "api::nomination.nomination",
-      "inversedBy": "libera_categories"
+      "mappedBy": "libera_categories"
     }
   }
 }
