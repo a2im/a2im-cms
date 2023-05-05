@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_a2_im_disclaimers",
+  "info": {
+    "displayName": "Disclaimer"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Text": {
+      "type": "text"
+    }
+  }
+}

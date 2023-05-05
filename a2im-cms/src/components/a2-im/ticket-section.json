@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_a2_im_ticket_sections",
+  "info": {
+    "displayName": "Ticket Section"
+  },
+  "options": {},
+  "attributes": {
+    "isActive": {
+      "type": "boolean"
+    }
+  }
+}

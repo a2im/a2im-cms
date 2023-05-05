@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_a2_im_tickets",
+  "info": {
+    "displayName": "Tickets",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "OriginalPrice": {
+      "type": "string"
+    },
+    "CurrentPrice": {
+      "type": "string"
+    },
+    "BuyLink": {
+      "type": "text"
+    }
+  }
+}

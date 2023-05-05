@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_a2_im_buttons",
+  "info": {
+    "displayName": "Button"
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Text": {
+      "type": "string"
+    },
+    "URL": {
+      "type": "string"
+    },
+    "NavType": {
+      "type": "enumeration",
+      "enum": [
+        "Internal",
+        "External"
+      ]
+    }
+  }
+}

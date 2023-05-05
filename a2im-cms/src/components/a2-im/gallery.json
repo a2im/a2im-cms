@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_a2_im_galleries",
+  "info": {
+    "displayName": "Gallery"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Images": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    },
+    "URL": {
+      "type": "string"
+    }
+  }
+}

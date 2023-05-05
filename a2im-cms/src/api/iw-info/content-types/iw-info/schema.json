@@ -1,0 +1,35 @@
+{
+  "kind": "singleType",
+  "collectionName": "iw_infos",
+  "info": {
+    "singularName": "iw-info",
+    "pluralName": "iw-infos",
+    "displayName": "IW-Info"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "TopInfo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "a2-im.info-card"
+    },
+    "Disclaimer": {
+      "type": "component",
+      "repeatable": false,
+      "component": "a2-im.disclaimer"
+    },
+    "Info": {
+      "type": "component",
+      "repeatable": true,
+      "component": "a2-im.info-card"
+    },
+    "WatchPastYears": {
+      "type": "component",
+      "repeatable": true,
+      "component": "a2-im.you-tube-playlist"
+    }
+  }
+}

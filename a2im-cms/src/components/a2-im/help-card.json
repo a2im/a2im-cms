@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_a2_im_help_cards",
+  "info": {
+    "displayName": "Help Card"
+  },
+  "options": {},
+  "attributes": {
+    "Type": {
+      "type": "enumeration",
+      "enum": [
+        "A",
+        "B"
+      ]
+    },
+    "Title": {
+      "type": "string"
+    },
+    "Text": {
+      "type": "text"
+    },
+    "Button": {
+      "type": "component",
+      "repeatable": true,
+      "component": "a2-im.button"
+    }
+  }
+}

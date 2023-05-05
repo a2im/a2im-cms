@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_a2_im_tickets_cards",
+  "info": {
+    "displayName": "Tickets Card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "BuyButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "a2-im.button"
+    },
+    "Tickets": {
+      "type": "component",
+      "repeatable": true,
+      "component": "a2-im.tickets"
+    },
+    "isActive": {
+      "type": "boolean"
+    }
+  }
+}

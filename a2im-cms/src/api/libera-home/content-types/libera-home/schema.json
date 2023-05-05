@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "libera_homes",
+  "info": {
+    "singularName": "libera-home",
+    "pluralName": "libera-homes",
+    "displayName": "Libera-Home"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Header": {
+      "type": "component",
+      "repeatable": false,
+      "component": "a2-im.header"
+    },
+    "Button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "a2-im.button"
+    },
+    "Info": {
+      "type": "component",
+      "repeatable": true,
+      "component": "a2-im.info-card"
+    }
+  }
+}

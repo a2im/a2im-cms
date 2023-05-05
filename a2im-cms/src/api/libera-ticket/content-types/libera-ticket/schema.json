@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "libera_tickets",
+  "info": {
+    "singularName": "libera-ticket",
+    "pluralName": "libera-tickets",
+    "displayName": "Libera-Ticket"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Info": {
+      "type": "component",
+      "repeatable": true,
+      "component": "a2-im.info-card"
+    }
+  }
+}

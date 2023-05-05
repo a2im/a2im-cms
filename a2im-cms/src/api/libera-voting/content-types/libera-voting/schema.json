@@ -1,0 +1,33 @@
+{
+  "kind": "singleType",
+  "collectionName": "libera_votings",
+  "info": {
+    "singularName": "libera-voting",
+    "pluralName": "libera-votings",
+    "displayName": "Libera-Voting"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "isActive": {
+      "type": "boolean"
+    },
+    "Header": {
+      "type": "component",
+      "repeatable": false,
+      "component": "a2-im.header"
+    },
+    "Step": {
+      "type": "component",
+      "repeatable": true,
+      "component": "a2-im.info-card"
+    },
+    "Help": {
+      "type": "component",
+      "repeatable": true,
+      "component": "a2-im.help-card"
+    }
+  }
+}

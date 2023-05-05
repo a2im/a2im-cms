@@ -1,0 +1,41 @@
+{
+  "kind": "singleType",
+  "collectionName": "iw_programs",
+  "info": {
+    "singularName": "iw-program",
+    "pluralName": "iw-programs",
+    "displayName": "IW-Program"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "isActive": {
+      "type": "boolean"
+    },
+    "ad": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::ad.ad"
+    },
+    "Info": {
+      "type": "component",
+      "repeatable": true,
+      "component": "a2-im.info-card"
+    },
+    "Program": {
+      "type": "richtext"
+    },
+    "WatchPastYears": {
+      "type": "component",
+      "repeatable": true,
+      "component": "a2-im.you-tube-playlist"
+    },
+    "Help": {
+      "type": "component",
+      "repeatable": true,
+      "component": "a2-im.help-card"
+    }
+  }
+}

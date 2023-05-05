@@ -1,0 +1,36 @@
+{
+  "kind": "singleType",
+  "collectionName": "iw_attends",
+  "info": {
+    "singularName": "iw-attend",
+    "pluralName": "iw-attends",
+    "displayName": "IW-Attend",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Info": {
+      "type": "component",
+      "repeatable": false,
+      "component": "a2-im.info-card"
+    },
+    "Tickets": {
+      "type": "component",
+      "repeatable": true,
+      "component": "a2-im.tickets-card"
+    },
+    "Accommodation": {
+      "type": "component",
+      "repeatable": false,
+      "component": "a2-im.accommodation"
+    },
+    "Help": {
+      "type": "component",
+      "repeatable": true,
+      "component": "a2-im.help-card"
+    }
+  }
+}

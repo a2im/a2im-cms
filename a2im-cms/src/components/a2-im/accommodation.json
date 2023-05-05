@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_a2_im_accommodations",
+  "info": {
+    "displayName": "Accommodation",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Text": {
+      "type": "text"
+    },
+    "HotelPackage": {
+      "type": "component",
+      "repeatable": true,
+      "component": "a2-im.tickets"
+    },
+    "MapiFrameEmbed": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "libera_abouts",
+  "info": {
+    "singularName": "libera-about",
+    "pluralName": "libera-abouts",
+    "displayName": "Libera-About"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "TopInfo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "a2-im.info-card"
+    },
+    "Gallery": {
+      "type": "component",
+      "repeatable": false,
+      "component": "a2-im.gallery"
+    },
+    "Info": {
+      "type": "component",
+      "repeatable": true,
+      "component": "a2-im.info-card"
+    }
+  }
+}

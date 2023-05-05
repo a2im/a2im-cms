@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_a2_im_you_tube_playlists",
+  "info": {
+    "displayName": "YouTube Playlist"
+  },
+  "options": {},
+  "attributes": {
+    "Year": {
+      "type": "string"
+    },
+    "PlaylistID": {
+      "type": "string"
+    }
+  }
+}
