@@ -4,7 +4,8 @@
   "info": {
     "singularName": "event",
     "pluralName": "events",
-    "displayName": "Event"
+    "displayName": "Event",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -24,14 +25,15 @@
       "type": "datetime"
     },
     "Cover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "URL": {
       "type": "string"
@@ -59,6 +61,9 @@
       "relation": "manyToMany",
       "target": "api::libera-category.libera-category",
       "inversedBy": "events"
+    },
+    "VideoURL": {
+      "type": "string"
     }
   }
 }
